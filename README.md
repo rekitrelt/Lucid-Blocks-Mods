@@ -12,7 +12,7 @@ my mods for lucid blocks (mostly using the Qualia-Mods API)
 
 Adds customizable air strafing movement  
 **Braking** - Press two of opposite directions to stop movement on that axis relative to camera (W+S or A+D) you can press all 4 if you want to stop completely, that or W+S and spin around
-<img width="825" height="458" alt="Medal_73ZFuXY2Al" src="https://github.com/user-attachments/assets/d5765a51-bfa6-4238-a762-804622076e52" />
+<img width="825" height="458" alt="Medal_73ZFuXY2Al" src="https://github.com/user-attachments/assets/d5765a51-bfa6-4238-a762-804622076e52" />  
 
 ## [Spawner+](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/Spawner+.zip) - improvements to vermin vigil blocks (spawners)
 
@@ -22,11 +22,10 @@ right click a vermin vigil block to toggle spawning (it will keep its vermin cap
 left click a vermin vigil block with a vermin vigil block to upgrade its spawn rate (2x, 3x, 4x, 5x, etc)  
 there is no limit so be careful (breaking the block will return all blocks used to upgrade it)  
 ### new_valid_logic
-Old Logic vs New Logic (also the old logic footage is sped up by 4x):
-<img width="886" height="480" alt="old logic vs new logic" src="https://github.com/user-attachments/assets/cae773e9-ef3a-42dd-8f59-7b30e792e10e" />
+Old Logic vs New Logic (also the old logic footage is sped up by 4x more than the new logic):
+<img width="886" height="480" alt="old logic vs new logic" src="https://github.com/user-attachments/assets/cae773e9-ef3a-42dd-8f59-7b30e792e10e" />  
 in vanilla even if you 20x the spawn-rate it will a lot of the time still fail to spawn the vermin thus making the functional spawn-rate 1/50th of what it should be  
 this new logic makes spawning more consistent and less prone to failing, if there is a block to spawn it will find it 50/50 times instead of vanillas lows of 1/50  
-
 
 ## [Apotheon](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/Apotheon.zip) - improvements to apotheosis/fusion (crafting)
 
@@ -36,22 +35,14 @@ makes fusion instant
 if you have 2 feathers and 2 dirt in the fusion menu and you fuse it will remove them, with this feature if you have more feather and/or dirt it will restore 2 of each into the slots ready to fuse again  
 ### Craft-Move
 shift-click the fuse button to send the result directly into your inventory
+<img width="824" height="452" alt="Medal_kpbT2np2Ah" src="https://github.com/user-attachments/assets/c031a3c0-1fd0-43ee-92b2-b5626e2333e2" />  
 
 ## [CMDS](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/CMDS.zip) - adds a command console
 
 open with **`**/**~** or **;**  
 press **Tab** to autocomplete, keep pressing to cycle through  
-
-`give <item> [amount] [durability]`  
-`repair`  
-`damage <hp>`  
-`heal [hp]`  
-`hp <amount>`  
-`maxhp <amount>`  
-`xp <amt>`  
-`gravity <value>`  
-`time <multiplier>`  
+<img width="692" height="376" alt="Medal_0rpOpfC4NQ" src="https://github.com/user-attachments/assets/44b1e4b8-a90c-4542-b4a9-74fe66125655" />
 
 ## [NoFog](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/NoFog.zip) - Removes fog
 
-Removes fog; toggle-able in config
+Removes fog; toggle-able in config  
