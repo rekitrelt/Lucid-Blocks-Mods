@@ -11,6 +11,39 @@ my mods for lucid blocks (mostly using the Qualia-Mods API)
 
 ---
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## [Air Strafe](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/AirStrafing.zip) - adds Air-Strafing (like CS:GO or Quake)
 
 Adds customizable air strafing movement.
