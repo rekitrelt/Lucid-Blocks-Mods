@@ -25,7 +25,8 @@ there is no limit so be careful (breaking the block will return all blocks used 
 in vanilla even if you 20x the spawn-rate it will a lot of the time still fail to spawn the vermin thus making the functional spawn-rate 1/50th of what it should be  
 this new logic makes spawning more consistent and less prone to failing, if there is a block to spawn it will find it 50/50 times instead of vanillas lows of 1/50  
 Old Logic vs New Logic:
-<img width="886" height="480" alt="old logic vs new logic" src="https://github.com/user-attachments/assets/3c6fc7bd-6777-4317-b566-7b0c5bf56bb1" />
+<img width="886" height="480" alt="old logic vs new logic" src="https://github.com/user-attachments/assets/cae773e9-ef3a-42dd-8f59-7b30e792e10e" />
+
 
 ## [Apotheon](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/Apotheon.zip) - improvements to apotheosis/fusion (crafting)
 
