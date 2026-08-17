@@ -35,6 +35,7 @@ shift-click the fuse button to send the result directly into your inventory
 ## [CMDS](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/CMDS.zip) - adds a command console
 
 open with `/~ or ;  
+press Tab to autocomplete, keep pressing to cycle through  
 
 `give <item> [amount] [durability]`  
 `repair`  
