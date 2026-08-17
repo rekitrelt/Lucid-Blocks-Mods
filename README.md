@@ -22,10 +22,10 @@ right click a vermin vigil block to toggle spawning (it will keep its vermin cap
 left click a vermin vigil block with a vermin vigil block to upgrade its spawn rate (2x, 3x, 4x, 5x, etc)  
 there is no limit so be careful (breaking the block will return all blocks used to upgrade it)  
 ### new_valid_logic
+Old Logic vs New Logic (also the old logic footage is sped up by 4x):
+<img width="886" height="480" alt="old logic vs new logic" src="https://github.com/user-attachments/assets/cae773e9-ef3a-42dd-8f59-7b30e792e10e" />
 in vanilla even if you 20x the spawn-rate it will a lot of the time still fail to spawn the vermin thus making the functional spawn-rate 1/50th of what it should be  
 this new logic makes spawning more consistent and less prone to failing, if there is a block to spawn it will find it 50/50 times instead of vanillas lows of 1/50  
-Old Logic vs New Logic:
-<img width="886" height="480" alt="old logic vs new logic" src="https://github.com/user-attachments/assets/cae773e9-ef3a-42dd-8f59-7b30e792e10e" />
 
 
 ## [Apotheon](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/Apotheon.zip) - improvements to apotheosis/fusion (crafting)
