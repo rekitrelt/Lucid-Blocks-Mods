@@ -2,11 +2,11 @@
 my mods for lucid blocks (mostly using the Qualia-Mods API)  
 
 # Mods
-- [Air Strafe](#air-strafe)
-- [Spawner+](#spawner+)
-- [Apotheon](#apotheon)
-- [CMDS](#cmds)
-- [NoFog](#nofog)
+- [Air Strafe](#air-strafe---adds-air-strafing-like-csgo-or-quake)
+- [Spawner+](#spawner---improvements-to-vermin-vigil-blocks-spawners)
+- [Apotheon](#apotheon---improvements-to-apotheosisfusion-crafting)
+- [CMDS](#cmds---adds-a-command-console-open-with--or-)
+- [NoFog](#nofog---removes-fog)
 
 ## [Air Strafe](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/AirStrafing.zip) - adds Air-Strafing (like CS:GO or Quake)
 
