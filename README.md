@@ -23,11 +23,9 @@ left click a vermin vigil block with a vermin vigil block to upgrade its spawn r
 there is no limit so be careful (breaking the block will return all blocks used to upgrade it)  
 ### new_valid_logic
 in vanilla even if you 20x the spawn-rate it will a lot of the time still fail to spawn the vermin thus making the functional spawn-rate 1/50th of what it should be  
-this new logic makes spawning more consistent and less prone to failing, if there is a block to spawn it will find it 50/50 times instead of vanillas lows of 1/50
+this new logic makes spawning more consistent and less prone to failing, if there is a block to spawn it will find it 50/50 times instead of vanillas lows of 1/50  
 Old Logic vs New Logic:
-https://github.com/user-attachments/assets/0482b777-bd4a-4147-b271-0c58315cb0c2
-
-
+<img width="886" height="480" alt="old logic vs new logic" src="https://github.com/user-attachments/assets/3c6fc7bd-6777-4317-b566-7b0c5bf56bb1" />
 
 ## [Apotheon](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/Apotheon.zip) - improvements to apotheosis/fusion (crafting)
 
