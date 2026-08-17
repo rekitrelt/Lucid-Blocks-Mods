@@ -32,7 +32,7 @@ this new logic makes spawning more consistent and less prone to failing, if ther
 ### No-Cooldown
 makes fusion instant  
 ### Recipe-Restore
-if you have 2 feathers and 2 dirt in the fusion menu and you fuse it will remove them, with this feature if you have more feather and/or dirt it will restore 2 of each into the slots ready to fuse again  
+when fusing if you have enough items to restore the ingredients to the recipe you just crafted then it will  
 ### Craft-Move
 shift-click the fuse button to send the result directly into your inventory
 <img width="824" height="452" alt="Medal_kpbT2np2Ah" src="https://github.com/user-attachments/assets/c031a3c0-1fd0-43ee-92b2-b5626e2333e2" />  
