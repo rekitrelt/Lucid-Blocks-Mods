@@ -10,7 +10,8 @@ my mods for lucid blocks (mostly using the Qualia-Mods API)
 
 ## [Air Strafe](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/AirStrafing.zip) - adds Air-Strafing (like CS:GO or Quake)
 
-Adds customizable air strafing movement
+Adds customizable air strafing movement  
+Braking - Press two of opposite directions to stop movement on that axis relative to camera (W+S or A+D) you can press all 4 if you want to stop completely, that or W+S and spin around
 
 ## [Spawner+](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/Spawner+.zip) - improvements to vermin vigil blocks (spawners)
 
