@@ -1,5 +1,5 @@
 # Lucid-Blocks-Mods
-my mods for lucid blocks (mostly using the Qualia-Mods API)  
+my mods for lucid blocks (mostly using the [Qualia-Mods API](https://github.com/MarcyMarbles/Qualia-Mods/tree/dev-experience) - [download built pck](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/_000_qualiamods.pck))  
 
 # Mods
 - [Air Strafe](#air-strafe---adds-air-strafing-like-csgo-or-quake)
