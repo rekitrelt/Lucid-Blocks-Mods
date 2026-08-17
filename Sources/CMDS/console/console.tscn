@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://bgkfjkdkfe8he"]
+
+[ext_resource type="Script" uid="uid://kvsqtpsvhx6l" path="res://mods/CMDS/console/console.gd" id="1_console"]
+
+[node name="Console" type="CanvasLayer" unique_id=1966405437]
+process_mode = 3
+layer = 100
+script = ExtResource("1_console")
+
+[node name="ConsolePanel" type="PanelContainer" parent="." unique_id=975179202]
+process_mode = 3
+self_modulate = Color(1, 1, 1, 0.73333335)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="ConsolePanel" unique_id=686515833]
+process_mode = 3
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBox" type="VBoxContainer" parent="ConsolePanel/Margin" unique_id=762919984]
+process_mode = 3
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="Output" type="RichTextLabel" parent="ConsolePanel/Margin/VBox" unique_id=1580709220]
+process_mode = 3
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 12
+bbcode_enabled = true
+scroll_following = true
+
+[node name="Suggestions" type="ItemList" parent="ConsolePanel/Margin/VBox" unique_id=689022184]
+process_mode = 3
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+auto_height = true
+
+[node name="InputRow" type="HBoxContainer" parent="ConsolePanel/Margin/VBox" unique_id=860391429]
+process_mode = 3
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="Prefix" type="Label" parent="ConsolePanel/Margin/VBox/InputRow" unique_id=152563692]
+process_mode = 3
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = ">"
+vertical_alignment = 1
+
+[node name="Input" type="LineEdit" parent="ConsolePanel/Margin/VBox/InputRow" unique_id=1014394524]
+process_mode = 3
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 12
+placeholder_text = "Enter command..."
+clear_button_enabled = true

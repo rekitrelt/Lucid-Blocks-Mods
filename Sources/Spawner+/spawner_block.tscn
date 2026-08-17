@@ -1,0 +1,271 @@
+[gd_scene format=3 uid="uid://d0hd2ti8d1ugw"]
+
+[ext_resource type="PackedScene" uid="uid://bga0rug8nljjk" path="res://main/world/living_block/living_block.tscn" id="1"]
+[ext_resource type="Script" uid="uid://ctv48sv7lfuye" path="res://mods/Spawner+/spawner_block.gd" id="2"]
+[ext_resource type="Shader" uid="uid://bmplwwfpoclph" path="res://main/world/living_block/cutscene_block/crystal.gdshader" id="3"]
+[ext_resource type="AudioStream" uid="uid://es8fyvjf7r6g" path="res://main/world/living_block/spawner_block/mechanism_1.wav" id="4"]
+[ext_resource type="AudioStream" uid="uid://dro47xf7uvit2" path="res://main/world/living_block/spawner_block/mechanism_2.wav" id="5"]
+[ext_resource type="AudioStream" uid="uid://dv6lj5u7gugkv" path="res://main/items/held_item/held_rope/sounds/metal_hit_1.wav" id="6"]
+[ext_resource type="AudioStream" uid="uid://ccxuadlc4hp3a" path="res://main/items/held_item/held_rope/sounds/metal_hit_2.wav" id="7"]
+[ext_resource type="AudioStream" uid="uid://cfopxmha5pn5y" path="res://main/items/held_item/held_rope/sounds/metal_hit_3.wav" id="8"]
+[ext_resource type="AudioStream" uid="uid://dbkbff6qyeji5" path="res://main/items/held_item/held_light/light.ogg" id="9"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_j661g"]
+radius = 0.2
+height = 0.4
+radial_segments = 32
+rings = 24
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2t1dj"]
+metallic = 0.83
+metallic_specular = 0.57
+roughness = 0.2
+
+[sub_resource type="BoxMesh" id="BoxMesh_j661g"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_bsm3t"]
+frequency = 0.0038
+fractal_type = 3
+fractal_octaves = 4
+fractal_lacunarity = 2.425
+domain_warp_amplitude = 30.44
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_tkbns"]
+noise = SubResource("FastNoiseLite_bsm3t")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_t1kjm"]
+render_priority = 1
+shader = ExtResource("3")
+shader_parameter/glass_normal = SubResource("NoiseTexture2D_tkbns")
+shader_parameter/distortion_size = 0.015
+
+[sub_resource type="Curve" id="Curve_c4auj"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.273118, 0.891912), 0.0, 0.0, 0, 0, Vector2(0.769893, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_8bvgg"]
+curve = SubResource("Curve_c4auj")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_phds3"]
+emission_shape = 1
+emission_sphere_radius = 0.25
+angle_min = -720.0
+angle_max = 720.0
+spread = 180.0
+initial_velocity_min = 0.9
+initial_velocity_max = 1.5
+gravity = Vector3(0, 0, 0)
+radial_accel_min = -2.0
+radial_accel_max = 0.499998
+tangential_accel_min = -0.400002
+tangential_accel_max = 0.399998
+scale_curve = SubResource("CurveTexture_8bvgg")
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7upen"]
+metallic = 0.83
+metallic_specular = 0.57
+roughness = 0.2
+
+[sub_resource type="SphereMesh" id="SphereMesh_ncafn"]
+material = SubResource("StandardMaterial3D_7upen")
+radius = 0.05
+height = 0.1
+radial_segments = 11
+rings = 8
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_t1kjm"]
+random_pitch = 1.1892071
+streams_count = 2
+stream_0/stream = ExtResource("4")
+stream_1/stream = ExtResource("5")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_nyv23"]
+random_pitch = 1.1892071
+streams_count = 3
+stream_0/stream = ExtResource("6")
+stream_1/stream = ExtResource("7")
+stream_2/stream = ExtResource("8")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_tkbns"]
+radius = 8.0
+
+[sub_resource type="Animation" id="Animation_t1kjm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sphere:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat64Array(0),
+"transitions": PackedFloat64Array(1),
+"update": 0,
+"values": [Vector3(1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SpawnPlayer:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat64Array(0),
+"transitions": PackedFloat64Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_tkbns"]
+resource_name = "spawn"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sphere:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat64Array(0, 0.033333335, 0.1, 1),
+"transitions": PackedFloat64Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(1, 1, 1), Vector3(0.9, 0.9, 0.9), Vector3(2, 2, 2), Vector3(1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SpawnPlayer:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat64Array(0.033333335),
+"transitions": PackedFloat64Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7upen"]
+_data = {
+&"RESET": SubResource("Animation_t1kjm"),
+&"spawn": SubResource("Animation_tkbns")
+}
+
+[node name="SpawnerBlock" unique_id=1216658665 instance=ExtResource("1")]
+script = ExtResource("2")
+max_count = 8
+min_spawn_time = 4.0
+max_spawn_time = 8.0
+spawn_radius = 4.0
+
+[node name="Light" type="OmniLight3D" parent="." index="0" unique_id=777529031]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.473224, 0.5)
+light_cull_mask = 4294967231
+shadow_enabled = true
+shadow_caster_mask = 4294967215
+distance_fade_enabled = true
+distance_fade_shadow = 16.0
+distance_fade_length = 20.0
+omni_range = 16.0
+
+[node name="Sphere" type="MeshInstance3D" parent="." index="1" unique_id=1777700336]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, 0.5)
+cast_shadow = 0
+mesh = SubResource("SphereMesh_j661g")
+surface_material_override/0 = SubResource("StandardMaterial3D_2t1dj")
+
+[node name="Cube" type="MeshInstance3D" parent="." index="2" unique_id=297727137]
+transform = Transform3D(0.989, 0, 0, 0, 0.989, 0, 0, 0, 0.989, 0.5, 0.5, 0.5)
+layers = 16
+mesh = SubResource("BoxMesh_j661g")
+surface_material_override/0 = SubResource("ShaderMaterial_t1kjm")
+
+[node name="Particles" type="GPUParticles3D" parent="." index="3" unique_id=1401651748]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, 0.5)
+cast_shadow = 0
+emitting = false
+amount = 60
+lifetime = 2.0
+collision_base_size = 0.1
+process_material = SubResource("ParticleProcessMaterial_phds3")
+draw_pass_1 = SubResource("SphereMesh_ncafn")
+
+[node name="GPUParticlesCollisionBox3D" type="GPUParticlesCollisionBox3D" parent="." index="4" unique_id=1228380546]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.5, 0.5)
+size = Vector3(1, 1, 1)
+
+[node name="GPUParticlesCollisionBox3D2" type="GPUParticlesCollisionBox3D" parent="." index="5" unique_id=1060420497]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.5, 0.5)
+size = Vector3(1, 1, 1)
+
+[node name="GPUParticlesCollisionBox3D3" type="GPUParticlesCollisionBox3D" parent="." index="6" unique_id=696074913]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.5, 0.5)
+size = Vector3(1, 1, 1)
+
+[node name="GPUParticlesCollisionBox3D4" type="GPUParticlesCollisionBox3D" parent="." index="7" unique_id=451324694]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, 1.5)
+size = Vector3(1, 1, 1)
+
+[node name="GPUParticlesCollisionBox3D5" type="GPUParticlesCollisionBox3D" parent="." index="8" unique_id=1213327071]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, -0.5)
+size = Vector3(1, 1, 1)
+
+[node name="GPUParticlesCollisionBox3D6" type="GPUParticlesCollisionBox3D" parent="." index="9" unique_id=1867957871]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.5, 0.5)
+size = Vector3(1, 1, 1)
+
+[node name="GPUParticlesAttractorBox3D" type="GPUParticlesAttractorBox3D" parent="." index="10" unique_id=926838660]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, 0.5)
+strength = 24.0
+attenuation = 2.63901
+cull_mask = 4293918848
+size = Vector3(8, 8, 8)
+
+[node name="MechanismPlayer" type="AudioStreamPlayer3D" parent="." index="11" unique_id=1733883274]
+unique_name_in_owner = true
+stream = SubResource("AudioStreamRandomizer_t1kjm")
+volume_db = -18.0
+unit_size = 8.0
+max_db = -1.0
+max_polyphony = 3
+bus = &"SFX"
+
+[node name="SpawnPlayer" type="AudioStreamPlayer3D" parent="." index="12" unique_id=41415505]
+unique_name_in_owner = true
+stream = SubResource("AudioStreamRandomizer_nyv23")
+volume_db = -18.0
+unit_size = 8.0
+max_db = -1.0
+pitch_scale = 0.5
+max_polyphony = 3
+bus = &"SFX"
+
+[node name="OnPlayer" type="AudioStreamPlayer3D" parent="." index="13" unique_id=1637219203]
+unique_name_in_owner = true
+stream = ExtResource("9")
+volume_db = -8.0
+unit_size = 5.35
+panning_strength = 1.36
+bus = &"SFX"
+
+[node name="CollisionTester" type="RayCast3D" parent="." index="14" unique_id=2003892198]
+unique_name_in_owner = true
+collision_mask = 7
+
+[node name="SpawnTimer" type="Timer" parent="." index="15" unique_id=1656702333]
+unique_name_in_owner = true
+one_shot = true
+
+[node name="DensityDetector" type="ShapeCast3D" parent="." index="16" unique_id=745115800]
+unique_name_in_owner = true
+shape = SubResource("SphereShape3D_tkbns")
+target_position = Vector3(0, 0, 0)
+collision_mask = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="17" unique_id=1184210785]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_7upen")
+speed_scale = 1.2
