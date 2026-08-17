@@ -32,17 +32,19 @@ if you have 2 feathers and 2 dirt in the fusion menu and you fuse it will remove
 ### Craft-Move
 shift-click the fuse button to send the result directly into your inventory
 
-## [CMDS](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/CMDS.zip) - adds a command console (open with ``/~` or `;`)
+## [CMDS](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/CMDS.zip) - adds a command console
 
-give <item> [amount] [durability]  
-repair  
-damage <hp>  
-heal [hp]  
-hp <amount>  
-maxhp <amount>  
-xp <amt>  
-gravity <value>  
-time <multiplier>  
+open with `/~ or ;  
+
+`give <item> [amount] [durability]`  
+`repair`  
+`damage <hp>`  
+`heal [hp]`  
+`hp <amount>`  
+`maxhp <amount>`  
+`xp <amt>`  
+`gravity <value>`  
+`time <multiplier>`  
 
 ## [NoFog](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/NoFog.zip) - Removes fog
 
