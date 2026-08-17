@@ -17,7 +17,8 @@ Adds customizable air strafing movement
 ### Toggling Spawners
 right click a vermin vigil block to toggle spawning (it will keep its vermin capsule saved)  
 ### Spawner Upgrades
-left click a vermin vigil block with a vermin vigil block to upgrade its spawn rate (2x, 3x, 4x, 5x, etc) there is no limit so be careful (breaking the block will return all blocks used to upgrade it)  
+left click a vermin vigil block with a vermin vigil block to upgrade its spawn rate (2x, 3x, 4x, 5x, etc)  
+there is no limit so be careful (breaking the block will return all blocks used to upgrade it)  
 ### new_valid_logic
 in vanilla even if you 20x the spawn-rate it will a lot of the time still fail to spawn the vermin thus making the functional spawn-rate 1/50th of what it should be, this new logic makes spawning more consistent and less prone to failing, if there is a block to spawn it will 50/50 times instead of vanillas lows of 1/50
 
