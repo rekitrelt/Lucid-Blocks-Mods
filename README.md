@@ -2,64 +2,40 @@
 my mods for lucid blocks (mostly using the Qualia-Mods API)  
 
 # Mods
-
 - [Air Strafe](#air-strafe)
-- [Spawner+](#Spawner+)
-- [Apotheon](#Apotheon)
-- [CMDS](#CMDS)
-- [NoFog](#NoFog)
-
----
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-..
-.
-.
-.
-.
-.
-.
+- [Spawner+](#spawner+)
+- [Apotheon](#apotheon)
+- [CMDS](#cmds)
+- [NoFog](#nofog)
 
 ## [Air Strafe](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/AirStrafing.zip) - adds Air-Strafing (like CS:GO or Quake)
 
-Adds customizable air strafing movement.
+Adds customizable air strafing movement
 
 ## [Spawner+](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/Spawner+.zip) - improvements to vermin vigil blocks (spawners)
 
-Adds additional spawning controls.
+Toggling Spawners - right click a vermin vigil block to toggle spawning (it will keep its vermin capsule saved)
+Spawner Upgrades - left click a vermin vigil block with a vermin vigil block to upgrade its spawn rate (2x, 3x, 4x, 5x, etc) there is no limit so be careful (breaking the block will return all blocks used to upgrade it)
+new_valid_logic - in vanilla even if you 20x the spawn-rate it will a lot of the time still fail to spawn the vermin thus making the functional spawn-rate 1/50th of what it should be, this new logic makes spawning more consistent and less prone to failing, if there is a block to spawn it will 50/50 times instead of vanillas lows of 1/50
 
 ## [Apotheon](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/Apotheon.zip) - improvements to apotheosis/fusion (crafting)
 
-Adds crafting and fusion improvements.
+No-Cooldown - makes fusion instant
+Recipe-Restore - if you have 2 feathers and 2 dirt in the fusion menu and you fuse it will remove them, with this feature if you have more feather and/or dirt it will restore 2 of each into the slots ready to fuse again
+Craft-Move - shift-click the fuse button to send the result directly into your inventory
 
 ## [CMDS](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/CMDS.zip) - adds a command console (open with `/~` or `;`)
 
-Adds crafting and fusion improvements.
+give <item> [amount] [durability]
+repair
+damage <hp>
+heal [hp]
+hp <amount>
+maxhp <amount>
+xp <amt>
+gravity <value>
+time <multiplier>
 
-## [NoFog](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/NoFog.zip) - removes fog
+## [NoFog](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/NoFog.zip) - Removes fog
 
-Adds crafting and fusion improvements.
+Removes fog; toggle-able in config
