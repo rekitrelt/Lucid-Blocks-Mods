@@ -2,6 +2,7 @@
 my mods for lucid blocks (mostly using the [Qualia-Mods API](https://github.com/MarcyMarbles/Qualia-Mods/tree/dev-experience) - [download built pck](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/_000_qualiamods.pck))  
 
 # Mods
+- [WorldEdit](#worldedit---adds-worldedit-commands-to-cmds-console--or-)
 - [Air Strafe](#air-strafe---adds-air-strafing-like-csgo-or-quake)
 - [Spawner+](#spawner---improvements-to-vermin-vigil-blocks-spawners)
 - [Apotheon](#apotheon---improvements-to-apotheosisfusion-crafting)
