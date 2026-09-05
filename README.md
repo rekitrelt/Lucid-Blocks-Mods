@@ -8,6 +8,19 @@ my mods for lucid blocks (mostly using the [Qualia-Mods API](https://github.com/
 - [CMDS](#cmds---adds-a-command-console-open-with--or-)
 - [NoFog](#nofog---removes-fog)
 
+## [WorldEdit](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/WorldEdit.zip) - adds WorldEdit commands to CMDS console `/~ or ;
+
+copy, cut, paste  
+replace, replacenear  
+set, wall  
+cylinder, hcylinder, sphere, hsphere, pyramid, hpyramid  
+undo, redo  
+stack  
+
+### replace example:
+https://github.com/user-attachments/assets/51aec4ed-eb64-40e3-aebe-1114b83e9125
+
+
 ## [Air Strafe](https://github.com/rekitrelt/Lucid-Blocks-Mods/releases/download/Lucid_Blocks_Mods/AirStrafing.zip) - adds Air-Strafing (like CS:GO or Quake)
 
 Adds customizable air strafing movement  
